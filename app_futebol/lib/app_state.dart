@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 
-enum InitState { naoConfigurado, inicializando, configurado }
+enum InitState { naoConfigurado, logado, configurado }
 
 class AppState extends ChangeNotifier {
   AppState() {
@@ -10,4 +10,14 @@ class AppState extends ChangeNotifier {
   InitState initState = InitState.naoConfigurado;
 
   void initialize() {}
+
+  void goToHome() {
+    initState = InitState.logado;
+    notifyListeners();
+  }
+
+  void goToLogin() {
+    initState = InitState.naoConfigurado;
+    notifyListeners();
+  }
 }

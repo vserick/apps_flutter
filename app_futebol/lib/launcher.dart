@@ -1,6 +1,7 @@
 import 'package:app_futebol/app_state.dart';
+import 'package:app_futebol/features/home/home_screen.dart';
 import 'package:app_futebol/injector.dart';
-import 'package:app_futebol/login/login_screen.dart';
+import 'package:app_futebol/features/login/login_screen.dart';
 import 'package:flutter/material.dart';
 
 class Launcher extends StatelessWidget {
@@ -19,8 +20,8 @@ class Launcher extends StatelessWidget {
     switch (appState.initState) {
       case InitState.naoConfigurado:
         return const LoginScreen();
-      case InitState.inicializando:
-        return Container();
+      case InitState.logado:
+        return const HomeScreen();
       default:
         return Container();
     }

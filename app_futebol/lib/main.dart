@@ -1,11 +1,21 @@
+import 'package:app_futebol/firebase_options.dart';
 import 'package:app_futebol/injector.dart';
 import 'package:app_futebol/launcher.dart';
 import 'package:app_futebol/theme/color_scheme.dart';
 import 'package:device_preview/device_preview.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  //Inicializa o firebase
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   configureDependencies();
 
   runApp(DevicePreview(
@@ -29,18 +39,20 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(
             seedColor: ColorApp.primary,
             secondary: ColorApp.secondary,
-            tertiary: ColorApp.tertiary,
-            error: ColorApp.error,
+            // tertiary: ColorApp.tertiary,
+            // error: ColorApp.error,
             surface: ColorApp.surface,
           ),
           elevatedButtonTheme: const ElevatedButtonThemeData(
               style: ButtonStyle(
                   backgroundColor: WidgetStatePropertyAll(ColorApp.tertiary))),
+          textTheme: TextTheme(bodyLarge: GoogleFonts.signikaNegative(color: ColorApp.tertiary)),
           inputDecorationTheme: const InputDecorationTheme(
               filled: true,
               fillColor: Color.fromARGB(83, 240, 238, 205),
               contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 15),
               labelStyle: TextStyle(color: ColorApp.tertiary),
+              hintStyle: TextStyle(color: ColorApp.tertiary),
               floatingLabelStyle: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -53,11 +65,9 @@ class MyApp extends StatelessWidget {
                   borderSide: BorderSide(color: Colors.transparent),
                   borderRadius: BorderRadius.all(Radius.circular(50))),
               focusedBorder: OutlineInputBorder(
-                  borderSide:
-                      BorderSide(color: ColorApp.tertiary),
+                  borderSide: BorderSide(color: ColorApp.tertiary),
                   borderRadius: BorderRadius.all(Radius.circular(50)))),
-          iconTheme:
-              const IconThemeData(color: ColorApp.surface)),
+          iconTheme: const IconThemeData(color: ColorApp.surface)),
       home: const Launcher(),
     );
   }
