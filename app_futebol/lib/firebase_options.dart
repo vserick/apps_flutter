@@ -44,41 +44,37 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC8ZrhIhlI2UXu6IFq1GnQp3cciNNxnWyo',
-    appId: '1:57869567989:web:8713453937100c455782bc',
-    messagingSenderId: '57869567989',
-    projectId: 'app-boleiros',
-    authDomain: 'app-boleiros.firebaseapp.com',
-    databaseURL: 'https://app-boleiros-default-rtdb.firebaseio.com',
-    storageBucket: 'app-boleiros.appspot.com',
+    apiKey: 'AIzaSyCtT9AFlDEX_28dP-f57nNtXcRrPAXvsP0',
+    appId: '1:629457049639:web:f2ab7edbe4430887e21602',
+    messagingSenderId: '629457049639',
+    projectId: 'boleiros-39fad',
+    authDomain: 'boleiros-39fad.firebaseapp.com',
+    storageBucket: 'boleiros-39fad.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyD8GfbKnIw2IRSVp2TeKifzPLnP-fx16Mc',
-    appId: '1:57869567989:android:de54e53ac01b3e745782bc',
-    messagingSenderId: '57869567989',
-    projectId: 'app-boleiros',
-    databaseURL: 'https://app-boleiros-default-rtdb.firebaseio.com',
-    storageBucket: 'app-boleiros.appspot.com',
+    apiKey: 'AIzaSyBfJdGos5OZnO4cnNfBu2usT4SxIjq8Nyw',
+    appId: '1:629457049639:android:161235ee83fb9d21e21602',
+    messagingSenderId: '629457049639',
+    projectId: 'boleiros-39fad',
+    storageBucket: 'boleiros-39fad.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBRCtvlpim2ygpLhLXI5Xd8yKLWuXwkAZw',
-    appId: '1:57869567989:ios:8ac78c871306df8f5782bc',
-    messagingSenderId: '57869567989',
-    projectId: 'app-boleiros',
-    databaseURL: 'https://app-boleiros-default-rtdb.firebaseio.com',
-    storageBucket: 'app-boleiros.appspot.com',
+    apiKey: 'AIzaSyDcg8lfvQZr9oxLlWO1YDYcoyaPzSyjk_s',
+    appId: '1:629457049639:ios:ee931b99875c4031e21602',
+    messagingSenderId: '629457049639',
+    projectId: 'boleiros-39fad',
+    storageBucket: 'boleiros-39fad.appspot.com',
     iosBundleId: 'com.example.appFutebol',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyC8ZrhIhlI2UXu6IFq1GnQp3cciNNxnWyo',
-    appId: '1:57869567989:web:6b71ae91ad588b235782bc',
-    messagingSenderId: '57869567989',
-    projectId: 'app-boleiros',
-    authDomain: 'app-boleiros.firebaseapp.com',
-    databaseURL: 'https://app-boleiros-default-rtdb.firebaseio.com',
-    storageBucket: 'app-boleiros.appspot.com',
+    apiKey: 'AIzaSyCtT9AFlDEX_28dP-f57nNtXcRrPAXvsP0',
+    appId: '1:629457049639:web:f53941fc7424a72be21602',
+    messagingSenderId: '629457049639',
+    projectId: 'boleiros-39fad',
+    authDomain: 'boleiros-39fad.firebaseapp.com',
+    storageBucket: 'boleiros-39fad.appspot.com',
   );
 }

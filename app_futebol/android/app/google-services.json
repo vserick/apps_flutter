@@ -1,33 +1,13 @@
 {
   "project_info": {
-    "project_number": "57869567989",
-    "firebase_url": "https://app-boleiros-default-rtdb.firebaseio.com",
-    "project_id": "app-boleiros",
-    "storage_bucket": "app-boleiros.appspot.com"
+    "project_number": "629457049639",
+    "project_id": "boleiros-39fad",
+    "storage_bucket": "boleiros-39fad.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:57869567989:android:85481fb944c1240d5782bc",
-        "android_client_info": {
-          "package_name": "com.example.app_boleiros"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyD8GfbKnIw2IRSVp2TeKifzPLnP-fx16Mc"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:57869567989:android:de54e53ac01b3e745782bc",
+        "mobilesdk_app_id": "1:629457049639:android:161235ee83fb9d21e21602",
         "android_client_info": {
           "package_name": "com.example.app_futebol"
         }
@@ -35,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyD8GfbKnIw2IRSVp2TeKifzPLnP-fx16Mc"
+          "current_key": "AIzaSyBfJdGos5OZnO4cnNfBu2usT4SxIjq8Nyw"
         }
       ],
       "services": {
